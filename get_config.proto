@@ -1,0 +1,17 @@
+syntax = "proto3";
+package get_config;
+// The get_config service definition.
+service get_config {
+  // RFC request and reply
+  rpc Login_info (Request) returns (Reply) {}
+}
+// The request message containing the login information.
+message Request {
+  string host = 1;
+  string username = 2;
+  string password = 3;
+}
+// The response message containing the string reply.
+message Reply {
+  string message = 1;
+}
