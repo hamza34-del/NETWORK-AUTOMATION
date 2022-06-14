@@ -1,3 +1,6 @@
+##Run the following command in the directory where the .proto file is saved:
+C:\Users\Richard\HCIP\gRPC>python -m grpc_tools.protoc -I./ --python_out=. --grpc_python_out=. ./get_config.proto
+
 syntax = "proto3";
 package get_config;
 // The get_config service definition.
